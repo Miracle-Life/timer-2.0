@@ -8,7 +8,7 @@
     </div>
     <div class="buttons">
       <div class="title">
-        <button type="button"  id="start"  [class.active]="!time" (click)="start()"  class="btn btn-success">Start / Stop</button>
+        <button type="button"  id="start"  [class.active]="!time" (click)="switchStart()"  class="btn btn-success">Start / Stop</button>
       </div>
       <div class="title">
         <button type="button" id="stop"  (click)="pause()" class="btn btn-danger" >Wait</button>

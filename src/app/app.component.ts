@@ -55,9 +55,10 @@ export class AppComponent {
   }
   stop() {
     clearInterval(this.interval);
-    this.time = false;
-    this.secondsStart = 0;
+    this.secondsStart =0;
     this.Time();
+    this.time = false;
+    return;
   }
 
 
