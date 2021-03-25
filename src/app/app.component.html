@@ -2,19 +2,19 @@
 <div class="main container ">
   <div id="timer">
     <div class="monitor" >
-      <div class="display" [class.active]="time">
-        <p>{{hour}}:{{minute}}:{{second}}</p>
+      <div class="display">
+        <p>{{timer | timer}}</p>
       </div>
     </div>
     <div class="buttons">
       <div class="title">
-        <button type="button"  id="start"  [class.active]="!time" (click)="switchStart()"  class="btn btn-success">Start / Stop</button>
+        <button type="button"  id="start"  (click)="run()"  class="btn btn-success">Start / Stop</button>
       </div>
       <div class="title">
-        <button type="button" id="stop"  (click)="pause()" class="btn btn-danger" >Wait</button>
+        <button type="button" id="stop"  (click)="wait()" class="btn btn-danger" >Wait</button>
       </div>
       <div class="title">
-        <button type="button" id="reset" [class.active]="time||secondsStart>0" (click)="reset()" class="btn btn-warning" >Reset</button>
+        <button type="button" id="reset"  (click)="reset()" class="btn btn-warning" >Reset</button>
       </div>
     </div>
   </div>
