@@ -6,22 +6,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Angular 2+
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Реализовать секундомер, который подсчитывает время в формате «HH: MM: SS»
 
-## Build
+Секундомер должен иметь следующие кнопки:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* «Start / Stop» - запуск / остановка отсчета времени, останавливает и обнуляет значение таймера.
 
-## Running unit tests
+* «Wait» - работает на двойной клик (время между нажатиями не более 300 мс!) таймер должен прекратить отсчет времени; если после него нажать старт, то возобновляется отсчет.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* «Reset» - сброс таймера на 0.  Обнуляет таймер и снова начинает отсчет.
 
-## Running end-to-end tests
+Требования:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ - используйте Observables в коде
 
-## Further help
+ - RxJS подход
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ - функциональный подход
+
+ - нам важнее всего увидеть Ваше умение писать код
+
+- 300 млс – это не DoubleClick
